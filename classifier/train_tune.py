@@ -251,7 +251,7 @@ def test(config):
     visualize_model(model_ft, dataloaders_dict, 'test')
 
 def train(config, checkpoint_dir=None, data_dir=None):
-    print(os.chdir("/home/asubramanian/TEM-XRD-pipeline/classifier"))
+    print(os.chdir("/home/asubramanian/AuSEM/classifier"))
     # Initialize the model for this run
     model_ft, input_size = initialize_model(config["model_name"], num_classes, config["feature_extract"], use_pretrained=True)
 

@@ -327,12 +327,12 @@ def run_segmentation(images_dir, mask_rcnn_dir, scales_path, output_dir):
                             ' --scales_path {}'
                             ' --output_dir {}'.format(
                                 './logs/tem/mask_rcnn_tem_0200.h5',
-                                os.path.join("/home/{}/TEM-XRD-pipeline/".format(user), images_dir),
+                                os.path.join("/home/{}/AuSEM/".format(user), images_dir),
                                 scales_path,
                                 output_dir),
                                 shell=True
                         )
-    os.chdir('/home/{}/TEM-XRD-pipeline'.format(user))
+    os.chdir('/home/{}/AuSEM'.format(user))
 
 def drop_zeros(scales_csv_path):
     df = pd.read_csv(scales_csv_path)

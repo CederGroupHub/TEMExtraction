@@ -30,42 +30,42 @@ def run_pipeline_single(output_dir, gpu, publisher, html_source):
         if not os.path.isdir(path):
             os.makedirs(path)
 
-    # # Extract images from htmls
-    # print("publisher pipeline", publisher)
-    # meta = extract_figures_single_paper(publisher, html_source)
+    # Extract images from htmls
+    print("publisher pipeline", publisher)
+    meta = extract_figures_single_paper(publisher, html_source)
 
-    # # publishers = ["Elsevier", "Nature Publishing Group", "The Royal Society of Chemistry", "Springer"]
-    # # # Extract images
-    # # for publisher in publishers:
-    # #     image_extractor.extract(publisher, download=True)
-    # # create_dir(make_path('extracted_images_gif'))
-    # image_extractor.extract_single_paper(publisher, meta)
+    # publishers = ["Elsevier", "Nature Publishing Group", "The Royal Society of Chemistry", "Springer"]
+    # # Extract images
+    # for publisher in publishers:
+    #     image_extractor.extract(publisher, download=True)
+    # create_dir(make_path('extracted_images_gif'))
+    image_extractor.extract_single_paper(publisher, meta)
 
-    # # Convert from gif to jpg
-    # # if not os.path.isdir(make_path("extracted_images_jpg")):
-    # #     os.mkdir(make_path("extracted_images_jpg"))
-    # for f in os.listdir(make_path("extracted_images_gif")):
-    #     create_dir(os.path.join(make_path('extracted_images_jpg')))
-    #     gif_to_jpg(os.path.join(make_path("extracted_images_gif"), f),
-    #             os.path.join(make_path("extracted_images_jpg"), str(f) + ".jpg"))
+    # Convert from gif to jpg
+    # if not os.path.isdir(make_path("extracted_images_jpg")):
+    #     os.mkdir(make_path("extracted_images_jpg"))
+    for f in os.listdir(make_path("extracted_images_gif")):
+        create_dir(os.path.join(make_path('extracted_images_jpg')))
+        gif_to_jpg(os.path.join(make_path("extracted_images_gif"), f),
+                os.path.join(make_path("extracted_images_jpg"), str(f) + ".jpg"))
 
-    # # Separate subfigures from composite figures
-    # extract(make_path('extracted_images_jpg'), output_dir)
-    # crop_images(make_path("extracted_images_jpg"), make_path("extracted_subfigures_json"), make_path("extracted_subfigures_png"))
+    # Separate subfigures from composite figures
+    extract(make_path('extracted_images_jpg'), output_dir)
+    crop_images(make_path("extracted_images_jpg"), make_path("extracted_subfigures_json"), make_path("extracted_subfigures_png"))
 
-    # classify(make_path('extracted_subfigures_png'), 'sem_tem_other', output_dir, gpu)
+    classify(make_path('extracted_subfigures_png'), 'sem_tem_other', output_dir, gpu)
 
-    # # # Classify subfigures into TEM, XRD, Other
-    # # classify(make_path('extracted_subfigures_png'), 'tem_xrd_other', output_dir, GPU)
+    # # Classify subfigures into TEM, XRD, Other
+    # classify(make_path('extracted_subfigures_png'), 'tem_xrd_other', output_dir, GPU)
 
-    # # # Classify TEM images into subcategories
-    # # classify(make_path('TEM'), 'tem_subcategories', output_dir, GPU)
+    # # Classify TEM images into subcategories
+    # classify(make_path('TEM'), 'tem_subcategories', output_dir, GPU)
 
-    # # Classify TEM images into Particulate and Non-particulate
-    # classify(make_path('TEM'), 'particulate', output_dir, gpu)
+    # Classify TEM images into Particulate and Non-particulate
+    classify(make_path('TEM'), 'particulate', output_dir, gpu)
 
-    # # Detect labels, scales and bars
-    # detect(make_path('Particulate'))
+    # Detect labels, scales and bars
+    detect(make_path('Particulate'))
 
     # Crop located labels, scales and bars
     crop_scales(make_path('Particulate'), 'label_scale_bar_detector/localizer/darknet/result.json', output_dir)

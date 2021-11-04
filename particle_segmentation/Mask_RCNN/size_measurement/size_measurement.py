@@ -203,7 +203,7 @@ def plot_shape(sizes_list, unit, num_plots):
 
 def measure_sizes_single(fname, masks, class_ids, scales_csv_path, output_dir):
     user = os.getenv("USER")
-    os.chdir('/home/{}/TEM-XRD-pipeline'.format(user))
+    os.chdir('/home/{}/AuSEM'.format(user))
 
     if not os.path.isdir(output_dir):
         os.mkdir(output_dir)
@@ -278,12 +278,15 @@ def measure_sizes_single(fname, masks, class_ids, scales_csv_path, output_dir):
     sizes_json[fname] = {}
     sizes_json[fname]["Size"] = sizes_list
     sizes_json[fname]["Unit"] = unit
+    print("sizes json", sizes_json)
+    print("out path", out_path)
     # if i % 1 == 0 and i != 0:
+    print('cwd', os.getcwd())
     with open(out_path, 'w') as outfile:
         json.dump(sizes_json, outfile)
     # if i % 20 == 0 and i != 0:
     #     print(i, " images completed!")
-    os.chdir('/home/{}/TEM-XRD-pipeline/particle_segmentation/Mask_RCNN'.format(user))
+    os.chdir('/home/{}/AuSEM/particle_segmentation/Mask_RCNN'.format(user))
 
 def main(masks_dir, class_ids_path, scales_csv_path, output_dir):
     class_ids_all = json.load(open(class_ids_path))
