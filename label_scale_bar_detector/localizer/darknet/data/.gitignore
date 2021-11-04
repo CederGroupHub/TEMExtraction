@@ -1,0 +1,6 @@
+*
+!labels
+!labels/*
+!.gitignore
+!obj.data
+!obj.names

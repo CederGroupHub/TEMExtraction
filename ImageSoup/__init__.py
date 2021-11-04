@@ -1,0 +1,1 @@
+from ImageSoup.ImageSoup import extract_figures_single_paper

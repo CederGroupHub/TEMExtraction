@@ -1,0 +1,1 @@
+from label_scale_bar_detector.OCR.classify import read

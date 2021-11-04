@@ -1,0 +1,5 @@
+from ImageSoup.ImageSoup.ElsevierImageSoup import ElsevierSoup
+from ImageSoup.ImageSoup.NatureImageSoup import NatureSoup
+from ImageSoup.ImageSoup.RSCImageSoup import RSCSoup
+from ImageSoup.ImageSoup.SpringerImageSoup import SpringerSoup
+from ImageSoup.ImageSoup.extract import extract_figures_single_paper

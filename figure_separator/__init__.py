@@ -1,0 +1,1 @@
+from figure_separator.run_separator import extract
