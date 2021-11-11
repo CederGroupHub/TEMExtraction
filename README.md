@@ -20,3 +20,4 @@ Run `python test_pipeline_single.py`.
 1) [https://github.com/AlexeyAB/darknet](https://github.com/AlexeyAB/darknet)
 2) [https://github.com/apple2373/figure-separator](https://github.com/apple2373/figure-separator)
 3) [https://github.com/yjn870/SRCNN-pytorch](https://github.com/yjn870/SRCNN-pytorch)
+4) [https://github.com/matterport/Mask_RCNN](https://github.com/matterport/Mask_RCNN)
