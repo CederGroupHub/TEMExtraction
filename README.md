@@ -17,8 +17,8 @@
 Run `conda env create -f environment.yml`.
 
 # Downloading images locally
-1) To download the full literature-mined dataset of 4365 images, run `python fetch_full_dataset.py`.
-2) To download the annotated dataset of 131 images that was used to train the segmentation model, run `python fetch_training_dataset.py`. 
+1) To download the full literature-mined dataset of 4365 images, run `python fetch_urls_full_dataset.py`.
+2) To download the annotated dataset of 131 images that was used to train the segmentation model, run `python fetch_urls_training_dataset.py`. 
 
 # Running the pipeline on a sample html document
 
