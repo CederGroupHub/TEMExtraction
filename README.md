@@ -10,7 +10,8 @@
 
 ## Datasets
 1) The json file with all extracted size/shape information corresponding to the 4365 literature-mined images can be downloaded from [Full_dataset](https://drive.google.com/file/d/1ELIE-ySpUyYtRyrAB2DOzVoIhi5x4e1q/view?usp=sharing).
-2) The json file with segmentation annotations corresponding to 131 images used as training data for the Mask-RCNN can be downloaded from [Training_dataset](https://drive.google.com/file/d/110WaFu40nF-LRCFa1nO8BO-bP_IejXZT/view?usp=sharing) 
+2) The json file with segmentation annotations corresponding to 131 images used as training data for the Mask-RCNN can be downloaded from [Training_dataset](https://drive.google.com/file/d/110WaFu40nF-LRCFa1nO8BO-bP_IejXZT/view?usp=sharing)
+Place both files at the root of the repository.
 
 ## Installation
 
