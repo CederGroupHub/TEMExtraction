@@ -13,7 +13,7 @@ Run `conda env create -f environment.yml`.
 
 # Running the pipeline
 
-Run `python pipeline_single.py`.
+Run `python test_pipeline_single.py`.
 
 # Acknowledgements
 
