@@ -321,6 +321,7 @@ def read_OCR_from_folder(tp, src_path, dest_path):
 def run_segmentation(images_dir, mask_rcnn_dir, scales_path, output_dir):
     os.chdir(mask_rcnn_dir)
     user = os.getenv("USER")
+    subprocess.check_call('python setup.py install', shell=True)
     subprocess.check_call('python samples/TEM/TEM.py infer'
                             ' --model {}'
                             ' --dataset {}'

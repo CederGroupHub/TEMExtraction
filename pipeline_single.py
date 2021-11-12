@@ -33,7 +33,6 @@ def run_pipeline_single(output_dir, gpu, publisher, html_source):
     create_dir(output_dir)
 
     # Extract images from htmls
-    print("publisher pipeline", publisher)
     meta = extract_figures_single_paper(publisher, html_source)
 
     # publishers = ["Elsevier", "Nature Publishing Group", "The Royal Society of Chemistry", "Springer"]

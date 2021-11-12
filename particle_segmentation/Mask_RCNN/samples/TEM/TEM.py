@@ -262,18 +262,12 @@ class TEMDataset(utils.Dataset):
 def visualize_instances(dataset_val, inference_config, gt=False, image_id=None):
     # if image_id is None:
     #     image_id = random.choice(dataset_val.image_ids)
-    print("image_id", image_id)
 
     for i, image_id in enumerate(dataset_val.image_ids):
         original_image, image_meta, gt_class_id, gt_bbox, gt_mask =\
             modellib.load_image_gt(dataset_val, inference_config, image_id)
     
         if gt == True:
-            # print("original_image", original_image)
-            # print("image_meta", image_meta)
-            print("gt_class_id", gt_class_id)
-            # print("gt_bbox", gt_bbox)
-            # print("gt_mask", gt_mask)
             visualize.display_instances(original_image, gt_bbox, gt_mask, gt_class_id,
                                         dataset_val.class_names, figsize=(8, 8), index=i)
         else:

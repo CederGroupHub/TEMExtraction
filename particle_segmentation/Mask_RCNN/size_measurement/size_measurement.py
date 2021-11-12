@@ -278,10 +278,6 @@ def measure_sizes_single(fname, masks, class_ids, scales_csv_path, output_dir):
     sizes_json[fname] = {}
     sizes_json[fname]["Size"] = sizes_list
     sizes_json[fname]["Unit"] = unit
-    print("sizes json", sizes_json)
-    print("out path", out_path)
-    # if i % 1 == 0 and i != 0:
-    print('cwd', os.getcwd())
     with open(out_path, 'w') as outfile:
         json.dump(sizes_json, outfile)
     # if i % 20 == 0 and i != 0:

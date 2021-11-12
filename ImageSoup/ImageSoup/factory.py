@@ -9,7 +9,6 @@ class Factory:
 
     def create(self, key):
         builder = self._builders.get(key)
-        print(key, builder)
         return builder()
 
 factory = Factory()
