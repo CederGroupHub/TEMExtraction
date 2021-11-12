@@ -11,7 +11,7 @@ from figure_separator import extract
 from utils import gif_to_jpg, crop_images
 
 
-OUTPUT_DIR = "extracted_data_segmentation"
+OUTPUT_DIR = "extracted_data_training_dataset"
 
 def make_path(path):
     return os.path.join(OUTPUT_DIR, path)
