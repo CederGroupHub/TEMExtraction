@@ -68,5 +68,8 @@ extract(make_path('extracted_images_jpg'), OUTPUT_DIR)
 crop_images(make_path("extracted_images_jpg"), make_path("extracted_subfigures_json"), make_path("extracted_subfigures_png"))
 
 create_dir(make_path('data'))
-for fname in fnames:
-    copyfile(make_path(os.path.join('extracted_subfigures_png', fname)), make_path(os.path.join('data', fname)))
+for i, fname in enumerate(fnames):
+    try:
+        copyfile(make_path(os.path.join('extracted_subfigures_png', fname)), make_path(os.path.join('data', fname)))
+    except:
+        print('Could not find ', fname)
