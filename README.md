@@ -25,7 +25,11 @@ Place both files at the root of the repository.
 
 # Running the pipeline
 
-Run `python test_pipeline_single.py`.
+Run `python test_pipeline_single.py`.  
+
+The following is an illustration of the steps involved in the pipeline.
+
+<img src="pipeline_figure.png" width=500>
 
 # Acknowledgements
 
