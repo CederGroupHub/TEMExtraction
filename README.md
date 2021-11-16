@@ -11,6 +11,7 @@
 ## Installation
 
 Run `conda env create -f environment.yml`.
+Note: This installation has been tested only on a Linux system.
 
 # Datasets
 ## Downloading JSON files
