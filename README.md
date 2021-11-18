@@ -11,10 +11,10 @@
 ## Installation
 
 If you would like to run the entire pipeline,
-Run `conda env create -f environment.yml`.  
+Run `conda env create -f environment/environment.yml`.  
 
 If you would only like to download the datasets,
-Run `conda env create -f environment_dataset.yml`.  
+Run `conda env create -f environment/environment_dataset.yml`.  
 Note: These installations have been tested only on a Linux system.
 
 # Datasets
