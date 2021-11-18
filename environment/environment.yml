@@ -1,4 +1,4 @@
-name: TEM_XRD_pipeline
+name: TEM_pipeline
 channels:
   - defaults
 dependencies:
@@ -175,4 +175,4 @@ dependencies:
     - werkzeug==1.0.1
     - wrapt==1.12.1
     - zipp==3.1.0
-prefix: /home/aksub99/miniconda3/envs/TEM_XRD_pipeline
+prefix: /home/aksub99/miniconda3/envs/TEM_pipeline

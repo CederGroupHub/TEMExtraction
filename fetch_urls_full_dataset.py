@@ -43,7 +43,7 @@ def hash(input_path):
 
 create_dir(make_path(PATH_extracted))
 fnames = []
-f = json.load(open('full_dataset.json'))
+f = json.load(open('full_dataset_final.json'))
 for entry in f.keys():
     image_info = f[entry]
     doi = image_info['DOI'].replace('/', '%')
