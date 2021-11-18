@@ -34,7 +34,7 @@ Run `python test_pipeline_single.py`.
 
 The following is an illustration of the steps involved in the pipeline.
 
-<img src="pipeline_figure.png" width=500>
+<img src="docs/pipeline_figure.png" width=500>
 
 # Acknowledgements
 
