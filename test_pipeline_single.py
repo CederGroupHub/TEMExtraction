@@ -1,6 +1,6 @@
 from pipeline_single import run_pipeline_single
 
-f = open('sample_html.html', 'r')
+f = open('sample/sample_html.html', 'r')
 data = str(f.read())
 f.close()
 
