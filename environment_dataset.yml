@@ -1,0 +1,47 @@
+name: figure_separator
+channels:
+  - menpo
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=4.5=1_gnu
+  - blas=1.0=openblas
+  - ca-certificates=2021.10.26=h06a4308_2
+  - certifi=2021.5.30=py36h06a4308_0
+  - ld_impl_linux-64=2.35.1=h7274673_9
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.3.0=h5101ec6_17
+  - libgfortran-ng=7.5.0=ha8ba4b0_17
+  - libgfortran4=7.5.0=ha8ba4b0_17
+  - libgomp=9.3.0=h5101ec6_17
+  - libopenblas=0.3.13=h4367d64_0
+  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - ncurses=6.3=h7f8727e_2
+  - numpy-base=1.17.0=py36h2f8d375_0
+  - opencv3=3.1.0=py36_0
+  - openssl=1.1.1l=h7f8727e_0
+  - pip=21.2.2=py36h06a4308_0
+  - python=3.6.12=hcff3b4d_2
+  - readline=8.1=h27cfd23_0
+  - setuptools=58.0.4=py36h06a4308_0
+  - sqlite=3.36.0=hc218d9a_0
+  - tk=8.6.11=h1ccaba5_0
+  - wheel=0.37.0=pyhd3eb1b0_1
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7b6447c_3
+  - pip:
+    - charset-normalizer==2.0.7
+    - idna==3.3
+    - numpy==1.19.5
+    - pandas==1.1.5
+    - pillow==8.4.0
+    - protobuf==3.19.1
+    - pytesseract==0.3.8
+    - python-dateutil==2.8.2
+    - pytz==2021.3
+    - requests==2.26.0
+    - six==1.16.0
+    - tensorflow==1.0.0
+    - urllib3==1.26.7
+prefix: /home/asubramanian/.conda/envs/figure_separator
+
