@@ -1,12 +1,12 @@
 # Setup Instructions
 
 ## Model Weights
-1) Download [SEM TEM Other Classifier weights](https://drive.google.com/file/d/1WcFTsYAxBUp5jic2rsLEHb6fW7Pw9PEn/view?usp=sharing) and place it in `classifier/SEM_TEM_Other_weights`.
-3) Download [Particulate Non-Particulate Classifier weights](https://drive.google.com/file/d/1buy3jZ_sVOo9absjWqk8MYwhjFk6JNJC/view?usp=sharing) and place it in `classifier/Particulate_nonParticulate_weights`.
-3) Download [Figure separation weights](https://drive.google.com/file/d/18moIauxgQR2-b4XRF7MAzseyq_8WGJ9D/view?usp=sharing) and place it in `figure-separator/data`.
-4) Download [SRCNN weights](https://drive.google.com/file/d/1zmBxzC9SVJm9vciOPLbKzVIVlH09UZtW/view?usp=sharing) and place it in `label_scale_bar_detector/OCR/SRCNN-pytorch/weights/`.
-5) Download [Darknet weights](https://drive.google.com/file/d/1CR0chidAN8x7LLWcLHYz4QR7pHfsQB8-/view?usp=sharing) and place it in `label_scale_bar_detector/localizer/darknet/backup`.
-6) Download [Mask RCNN weights](https://drive.google.com/file/d/1JwXbYScYNlds5g5JHFwEZLwI5eShyaj4/view?usp=sharing) and place it in `particle_segmentation/Mask_RCNN/logs/tem`.
+1) Download [SEM TEM Other Classifier weights](https://drive.google.com/file/d/1UmzfrGB2K9bKjpNcCbFi1SlccrhlUiVf/view?usp=sharing) and place it in `classifier/SEM_TEM_Other_weights`.
+3) Download [Particulate Non-Particulate Classifier weights](https://drive.google.com/file/d/1C6kBePsjeg4NoSaOwrehDdK0X_aSUuc0/view?usp=sharing) and place it in `classifier/Particulate_nonParticulate_weights`.
+3) Download [Figure separation weights](https://drive.google.com/file/d/10hYaPTJgdvfcJoI3amXxyL2Jb-X0ANYq/view?usp=sharing) and place it in `figure-separator/data`.
+4) Download [SRCNN weights](https://drive.google.com/file/d/11GSW2iZ2UuAge5z2oOXIEiEvLp756qXG/view?usp=sharing) and place it in `label_scale_bar_detector/OCR/SRCNN-pytorch/weights/`.
+5) Download [Darknet weights](https://drive.google.com/file/d/19tT2IpOfo0hE3o4zRFNvPsf8JDw8beOO/view?usp=sharing) and place it in `label_scale_bar_detector/localizer/darknet/backup`.
+6) Download [Mask RCNN weights](https://drive.google.com/file/d/15Uo5YZjTrFb0kKaDYo1ctUIV-3leQmsR/view?usp=sharing) and place it in `particle_segmentation/Mask_RCNN/logs/tem`.
 
 ## Installation
 
@@ -19,8 +19,8 @@ Note: These installations have been tested only on a Linux system.
 
 # Datasets
 ## Downloading JSON files
-1) The json file with all extracted size/shape information corresponding to the 4361 literature-mined images can be downloaded from [Full_dataset](https://drive.google.com/file/d/16_qaY6YwLIKzWaio_RfzZJJDwZO59eJG/view?usp=sharing).
-2) The json file with segmentation annotations corresponding to 131 images used as training data for the Mask-RCNN can be downloaded from [Training_dataset](https://drive.google.com/file/d/110WaFu40nF-LRCFa1nO8BO-bP_IejXZT/view?usp=sharing).   
+1) The json file with all extracted size/shape information corresponding to the 4361 literature-mined images can be downloaded from [Full_dataset](https://drive.google.com/file/d/16kMnqD5b4-c3qTi3WB9HaUk3bXESWeDq/view?usp=sharing).
+2) The json file with segmentation annotations corresponding to 131 images used as training data for the Mask-RCNN can be downloaded from [Training_dataset](https://drive.google.com/file/d/1Iz0Sxx0DqW-_W4XA0oZHarZrLLcbn6Bf/view?usp=sharing).   
    
 Place both files at the root of the repository.
 
